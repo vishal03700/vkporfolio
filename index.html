@@ -1563,15 +1563,10 @@
             </svg>
         </div>
     </section>
-    <!-- Floating Chatbot -->
-<div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
-    <!-- Toggle Button -->
-    <button id="chat-toggle" class="bg-indigo-600 hover:bg-indigo-700 text-white p-4 rounded-full shadow-lg focus:outline-none">
-      💬
-    </button>
-  
+   <!-- Floating Chatbot -->
+<div id="chatbot-container" class="fixed inset-0 flex items-center justify-center z-50">
     <!-- Chat Window -->
-    <div id="chat-window" class="hidden mt-4 w-80 h-96 bg-white border border-gray-300 rounded-lg shadow-xl flex flex-col">
+    <div id="chat-window" class="hidden w-80 h-96 bg-white border border-gray-300 rounded-lg shadow-xl flex flex-col">
       <!-- Header -->
       <div class="bg-indigo-600 text-white px-4 py-2 rounded-t-lg flex justify-between items-center">
         <span>ChatBot</span>
@@ -1589,6 +1584,11 @@
         <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-r hover:bg-indigo-700">Send</button>
       </form>
     </div>
+  
+    <!-- Toggle Button -->
+    <button id="chat-toggle" class="fixed bottom-6 right-6 bg-indigo-600 hover:bg-indigo-700 text-white p-4 rounded-full shadow-lg focus:outline-none">
+      💬
+    </button>
   </div>
   
 
