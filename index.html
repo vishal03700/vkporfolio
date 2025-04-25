@@ -2109,6 +2109,24 @@ document.addEventListener('DOMContentLoaded', function() {
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
   });
+  const chatToggle = document.getElementById('chat-toggle');
+  const chatWindow = document.getElementById('chat-window');
+  const chatClose = document.getElementById('chat-close');
+
+  // Show chat on toggle click
+  chatToggle.addEventListener('click', () => {
+    chatWindow.classList.remove('hidden');
+  });
+
+  // Close chat only on '✖' button click
+  chatClose.addEventListener('click', () => {
+    chatWindow.classList.add('hidden');
+  });
+
+  // Prevent click inside chat from closing it (if you ever add click outside logic)
+  chatWindow.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
     </script>
 </body>
 </html>
